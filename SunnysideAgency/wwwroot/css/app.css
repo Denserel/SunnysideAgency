@@ -1,4 +1,4 @@
-﻿
+﻿@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
 
 /* RESET */
 *,
@@ -21,6 +21,72 @@ textarea {
     font: inherit;
 }
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* VARIABLES */
+
+:root {
+    /* Font and Topography */
+    --FONT-FAMELY: 'barlow', sans-sarif;
+    --HEADING-FONT: 'fraunces', sans-serif;
+    /* Colour */
+    --PRIMARY-SOFT-RED: hsl(7, 99%, 70%);
+    --PRIMARY-YELLOW: hsl(51, 100%, 49%);
+    --PRIMARY-DARK-DESATURATED-CYAN: hsl(167, 40%, 24%);
+    --PRIMARY-DARK-BLUE: hsl(198, 62%, 26%);
+    --PRIMARY-DARK-MODERATE-CYAN: hsl(168, 34%, 41%);
+    --NATURAL-DARK-DESATURATED-BLUE: hsl(212, 27%, 19%);
+    --NATURAL-VERY-DARK-GRAYISH-BLUE: hsl(213, 9%, 39%);
+    --NATURAL-DARK-GRAYISH-BLUE: hsl(232, 10%, 55%);
+    --NATURAL-GRAYISH-BLUE: hsl(210, 4%, 67%);
+    --NATURAL-WHITE: hsl(0, 0%, 100%);
+}
+
+body {
+    font: var(--FONT-FAMELY);
+}
+
+/* HEADER */
+
+.header {
+    background-image: url('../images/mobile/image-header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.header__navbar {
+    position: relative;
+    display: flex;
+    padding: 2em;
+    justify-content: space-between;
+}
+
+.header__navbar-nav {
+    position: absolute;
+    background: var(--NATURAL-WHITE);
+}
+
+.header__navbar-nav-list {
+    display: grid;
+    gap: 1em;
+}
+
+.header__navbar-navmenutoggle {
+    background: none;
+    border: none;
+    color: var(--NATURAL-WHITE);
+    font-size: 1.5rem;
+}
+
+/* BLAZOR STUFF */
 .valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;
 }
