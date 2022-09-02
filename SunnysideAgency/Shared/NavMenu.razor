@@ -1,10 +1,10 @@
 ﻿<header class="header">
     <section class="header__navbar">
-        <img class="header__navbar-logo" src="images/logo.svg" />
-        <nav class="header__navbar-nav" style="display:@NavMenuCssClass">
+        <img class="header__navbar-logo" alt="sunnyside logo" src="images/logo.svg" />
+        <nav class="header__navbar-nav" style="display: @NavMenuCssClass">
             <ul class="header__navbar-nav-list">
                 <li>
-                    <span>Home</span>
+                    <span>About</span>
                 </li>
                 <li>
                     <span>Service</span>
@@ -21,12 +21,18 @@
             <span class="fa-solid fa-bars"></span>
         </button>
     </section>
+    <figure>
+        <figcaption>
+            WE ARE CREATIVES
+        </figcaption>
+        <img alt="arrow down" src="images/icon-arrow-down.svg" />
+    </figure>
 </header>
 
 @code {
-    private bool collapseNavMenu;
+    private bool collapseNavMenu = false;
 
-    private string? NavMenuCssClass => collapseNavMenu ? "none" : "block";
+    private string? NavMenuCssClass => collapseNavMenu ? "block" : null;
 
     private void ToggleNavMenu()
     {
