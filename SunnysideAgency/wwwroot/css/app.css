@@ -40,7 +40,7 @@ li {
     --PRIMARY-YELLOW: hsl(51, 100%, 49%);
     --PRIMARY-DARK-DESATURATED-CYAN: hsl(167, 40%, 24%);
     --PRIMARY-DARK-BLUE: hsl(198, 62%, 26%);
-    --PRIMARY-DARK-MODERATE-CYAN: hsl(168, 34%, 41%);
+    --PRIMARY-DARK-MODERATE-CYAN: hsl(168, 34%, 67%);
     --NATURAL-VERY-DARK-DESATURATED-BLUE: hsl(212, 27%, 19%);
     --NATURAL-VERY-DARK-GRAYISH-BLUE: hsl(213, 9%, 39%);
     --NATURAL-DARK-GRAYISH-BLUE: hsl(232, 10%, 55%);
@@ -218,6 +218,87 @@ body {
     line-height: 1.5em;
 }
 
+.client-testimonials {
+    display: grid;
+    gap: 4em;
+    padding: 4em 1.5em;
+    text-align: center;
+}
+
+.client-testimonials__heading {
+    color: var(--NATURAL-GRAYISH-BLUE);
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: var(--HEADING-FONT);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.client-testimonials__artical {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.client-testimonials__image {
+    border-radius: 50%;
+    height: auto;
+    width: 70px;
+    margin: 0 auto;
+}
+
+.client-testimonials__artical-text {
+    color: var(--NATURAL-VERY-DARK-GRAYISH-BLUE);
+    line-height: 1.8rem;
+    font-size: 1.1rem
+}
+
+.client-testimonials__artical-name {
+    font-weight: 900;
+    font-family: var(--HEADING-FONT);
+    font-size: 1.1rem;
+    color: var(--NATURAL-VERY-DARK-DESATURATED-BLUE);
+    margin-bottom: 1rem;
+}
+
+.client-testimonials__artical-jobb {
+    color: var(--NATURAL-GRAYISH-BLUE);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+    color: var(--PRIMARY-DARK-DESATURATED-CYAN);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--PRIMARY-DARK-MODERATE-CYAN);
+    padding: 4rem 2rem;
+}
+
+.footer__logo {
+    filter: invert(70%) sepia(30%) saturate(772%) hue-rotate(116deg) brightness(99%) contrast(86%);
+    width: 200px;
+    margin: 0 auto;
+}
+
+.footer__nav-list{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.3rem;
+}
+
+.footer__socials {
+    font-size: 1.5rem;
+    
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+    margin-top: 2rem;
+}
 
 /* BLAZOR STUFF */
 .valid.modified:not([type=checkbox]) {
