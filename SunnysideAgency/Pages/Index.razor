@@ -4,7 +4,7 @@
 
 <section class="transform">
     <picture>
-        <source media="(min-width: 540px)" srcset="./images/desktop/image-transform.jpg" />
+        <source media="(min-width: @(minWidth)px)" srcset="./images/desktop/image-transform.jpg" />
         <img src="./images/mobile/image-transform.jpg" />
     </picture>
     <div>
@@ -19,7 +19,7 @@
 
 <section class="stand-out">
     <picture>
-        <source media="(min-width: 540px)" srcset="images/desktop/image-stand-out.jpg" />
+        <source media="(min-width: @(minWidth)px)" srcset="images/desktop/image-stand-out.jpg" />
         <img src="images/mobile/image-stand-out.jpg" />
     </picture>
     <div>
@@ -92,19 +92,23 @@
 
 <section class="gallery">
     <picture>
-        <source media="(min-width: 540px)" srcset="images/desktop/image-gallery-milkbottles.jpg" />
+        <source media="(min-width: @(minWidth)px)" srcset="images/desktop/image-gallery-milkbottles.jpg" />
         <img src="images/mobile/image-gallery-milkbottles.jpg" />
     </picture>
     <picture>
-        <source media="(min-width: 540px)" srcset="images/desktop/image-gallery-orange.jpg" />
+        <source media="(min-width: @(minWidth)px)" srcset="images/desktop/image-gallery-orange.jpg" />
         <img src="images/mobile/image-gallery-orange.jpg" />
     </picture>
     <picture>
-        <source media="(min-width: 540px)" srcset="images/desktop/image-gallery-cone.jpg" />
+        <source media="(min-width: @(minWidth)px)" srcset="images/desktop/image-gallery-cone.jpg" />
         <img src="images/mobile/image-gallery-cone.jpg" />
     </picture>
     <picture>
-        <source media="(min-width: 540px)" srcset="images/desktop/image-gallery-sugarcubes.jpg" />
+        <source media="(min-width: @(minWidth)px)" srcset="images/desktop/image-gallery-sugarcubes.jpg" />
         <img src="images/mobile/image-gallery-sugar-cubes.jpg" />
     </picture>
 </section>
+
+@code {
+    private int minWidth = 720;
+}
